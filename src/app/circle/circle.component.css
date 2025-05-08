@@ -1,0 +1,33 @@
+.circle{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.circle1{
+    width: 25%;
+    height: 40%;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+}
+button{
+    width: 92%;
+    height: 10%;
+    background-color: blue;
+    color: white;
+   border-radius: 10px;
+}
+input{
+    width: 92%;
+    height: 10%;
+}
+
+h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+ }

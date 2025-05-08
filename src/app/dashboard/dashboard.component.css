@@ -8,9 +8,25 @@
     width: 20%;
     height: 100%;
     background-color: coral;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* display: flex; */
+    line-height: 500%;
 }
 .right{
     width: 80%;
     height: 100%;
     background-color: plum;
+}
+button{
+    width: 80%;
+    height: 6%;
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+hr{
+    color: white;
 }
