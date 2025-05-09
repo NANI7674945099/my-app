@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./bmi.component.css']
 })
 export class BmiComponent {
-  num1:number=0;
-  num2:number=0;
+  height:number=0;
+  weight:number=0;
   result:number=0;
   calculate(){
-    this.result=this.num2/(this.num1*this.num1);
+    this.result=this.weight/(this.height*this.height);
   }
 
 }
