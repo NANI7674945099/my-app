@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: aqua;
+    position: relative;
 }
 .bmi1{
     width: 25%;
@@ -12,6 +13,8 @@
     display: flex;
     flex-direction: column;
     border: 1px solid green;
+    position: absolute;
+    margin: 50px;
 }
 button{
     width: 92%;

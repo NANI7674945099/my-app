@@ -2,13 +2,13 @@
 <div class="rectangle">
     <div class="rectangle1">
         <label><h3>Length :</h3></label>
-        <input type="number"><br><br>
+        <input type="number" [(ngModel)]="num1"><br><br>
         <label><h3>Breadth :</h3></label>
-        <input type="number"><br><br>
+        <input type="number" [(ngModel)]="num2"><br><br>
         
-        <button>Area</button><br><br>
-        <button>Perimeter</button><br><br>
+        <button (click)="area()" [disabled]="(num1==0)||(num2==0)">Area</button><br><br>
+        <button (click)="perimeter()" [disabled]="(num1==0)||(num2==0)">Perimeter</button><br><br>
 
-        <h2>Result is</h2>
+        <h2>Result is:{{result}}</h2>
     </div>
 </div>

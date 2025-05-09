@@ -2,11 +2,11 @@
 <div class="bmi">
     <div class="bmi1">
         <label><h3>Height</h3></label>
-        <input type="number"><br><br>
+        <input type="number" [(ngModel)]="num1"><br><br>
         <label><h3>Weight</h3></label>
-        <input type="number"><br><br>
+        <input type="number" [(ngModel)]="num2"><br><br>
 
-        <button>Calculate</button><br><br>
-        <h2>Your BMI is</h2>
+        <button (click)="calculate()" >Calculate</button><br><br>
+        <h2>Your BMI is:{{result}}</h2>
     </div>
 </div>

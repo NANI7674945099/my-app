@@ -28,4 +28,11 @@ export class DatabindingComponent {
     alert("state")
   }
 
+  num1:number=0;
+  num2:number=0;
+  sum:number=0;
+  calculate(){
+    this.sum=this.num1+this.num2;
+  }
+
 }

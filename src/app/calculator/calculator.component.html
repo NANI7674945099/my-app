@@ -2,15 +2,15 @@
 <div class="calculator">
     <div class="calculator1">
         <label><h3>Number 1:</h3></label>
-        <input type="number">
+        <input type="number" [(ngModel)]="num1">
         <label><h3>Number 2:</h3></label>
-        <input type="number"><br>
+        <input type="number" [(ngModel)]="num2"><br>
         <div class="buttons">
-            <button>Sum</button>
-            <button>Sub</button>
-            <button>Mul</button>
-            <button>Div</button>
+            <button (click)="sum()" [disabled]="(num1==0)||(num2==0)">Sum</button>
+            <button (click)="sub()" [disabled]="(num1==0)||(num2==0)">Sub</button>
+            <button (click)="mul()" [disabled]="(num1==0)||(num2==0)">Mul</button>
+            <button (click)="div()" [disabled]="(num1==0)||(num2==0)">Div</button>
         </div><br>
-        <h2>Result is</h2>
+        <h2>Result is:{{result}}</h2>
     </div>
 </div>
