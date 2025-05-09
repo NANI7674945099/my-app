@@ -12,7 +12,7 @@
     justify-content: space-between;
     flex-direction: column;
     /* display: flex; */
-    line-height: 500%;
+    line-height: 450%;
 }
 .right{
     width: 80%;
