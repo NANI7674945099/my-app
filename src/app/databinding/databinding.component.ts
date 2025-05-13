@@ -9,7 +9,7 @@ export class DatabindingComponent {
 
   message:string='Good Morning Everyone!';
   isDisabled:boolean=true;
-  name:string='Nani'
+  name:string='Nani';
 
   mobile:string='+91';
   submit(){

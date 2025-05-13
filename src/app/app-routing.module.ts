@@ -11,6 +11,11 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeesdataComponent } from './employeesdata/employeesdata.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
+import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -19,6 +24,11 @@ const routes: Routes = [
     {path:'welcome',component:WelcomeComponent},
     {path:'databinding',component:DatabindingComponent},
     {path:'directives',component:DirectivesComponent},
+    {path:'employeesdata',component:EmployeesdataComponent},
+    {path:'vehicles',component:VehiclesComponent},
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'mail',component:MailComponent},
+    {path:'weather',component:WeatherComponent},
     {path:'calculator',component:CalculatorComponent},
     {path:'rectangle',component:RectangleComponent},
     {path:'circle',component:CircleComponent},

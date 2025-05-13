@@ -1,0 +1,7 @@
+<!-- <p>mail works!</p> -->
+<div class="mail">
+    <div class="" *ngFor="let mails of mail, let i=index">
+        <h4 [ngStyle]='{color:mails.completed?"yellow":""}'>{{mails.id}}.{{mails.title}}</h4>
+    </div>
+</div>
+
