@@ -1,5 +1,41 @@
 <!-- <p>vehicles works!</p> -->
-<table border="2">
+<input type="text" placeholder="enter text to search" [(ngModel)]="keywords" (keyup)="search()">
+
+<select [(ngModel)]="column">
+    <option value="Vehicle">Vehicle Name</option>
+    <option value="color">Color</option>
+    <option value="cost">Cost</option>
+    <option value="fuel">Fuel</option>
+</select>
+
+<select [(ngModel)]="order">
+    <option value="asc">Asending Order</option>
+    <option value="desc">Desending Order</option>
+</select>
+
+<button class="btn btn-secondary" (click)="sort()">Sort</button><br>
+
+<!-- pagination -->
+<select [(ngModel)]="limit">
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="50">50</option>
+</select>
+
+<select [(ngModel)]="page">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select>
+
+<button class="btn btn-primary" (click)="pagination()">Pagination</button>
+
+<button routerLink="/dashboard/create-vehicle">Create-Vehicle</button>
+
+
+<table border="5" class="table table-dark">
     <thead>
         <tr>
             <th>S.No</th>
@@ -13,6 +49,7 @@
             <th>model</th>
             <th>type</th>
             <th>tyres</th>
+            <th>delete</th>
         </tr>
     </thead>
     <tbody>
@@ -28,6 +65,9 @@
             <td>{{vehicle.model}}</td>
             <td>{{vehicle.type}}</td>
             <td>{{vehicle.tyres}}</td>
+            <td><button class="btn btn-danger"
+                (click)="delete(vehicle.id)">Delete</button>
+            </td>
             
         </tr>
     </tbody>

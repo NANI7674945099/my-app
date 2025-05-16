@@ -13,7 +13,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { EmployeesdataComponent } from './employeesdata/employeesdata.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
@@ -21,6 +21,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { WeatherComponent } from './weather/weather.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { StudentCardComponent } from './student-card/student-card.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateuserTaskComponent } from './createuser-task/createuser-task.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +45,19 @@ import { WeatherComponent } from './weather/weather.component';
     VehiclesComponent,
     FlipkartComponent,
     MailComponent,
-    WeatherComponent
+    WeatherComponent,
+    CreateVehicleComponent,
+    StudentCardComponent,
+    CreateStudentComponent,
+    CreateUserComponent,
+    CreateuserTaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

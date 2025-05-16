@@ -16,6 +16,11 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { WeatherComponent } from './weather/weather.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { StudentCardComponent } from './student-card/student-card.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateuserTaskComponent } from './createuser-task/createuser-task.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -29,10 +34,15 @@ const routes: Routes = [
     {path:'flipkart',component:FlipkartComponent},
     {path:'mail',component:MailComponent},
     {path:'weather',component:WeatherComponent},
+    {path:'create-vehicle',component:CreateVehicleComponent},
+    {path:'student-card',component:StudentCardComponent},
+    {path:'create-student',component:CreateStudentComponent},
     {path:'calculator',component:CalculatorComponent},
     {path:'rectangle',component:RectangleComponent},
     {path:'circle',component:CircleComponent},
-    {path:'bmi',component:BmiComponent}
+    {path:'bmi',component:BmiComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'createuser-task',component:CreateuserTaskComponent}
 
   ]},
   {path:'**',component:ErrorComponent}
