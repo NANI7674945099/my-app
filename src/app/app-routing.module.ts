@@ -21,10 +21,11 @@ import { StudentCardComponent } from './student-card/student-card.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateuserTaskComponent } from './createuser-task/createuser-task.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard],children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
     {path:'databinding',component:DatabindingComponent},
@@ -42,7 +43,9 @@ const routes: Routes = [
     {path:'circle',component:CircleComponent},
     {path:'bmi',component:BmiComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'createuser-task',component:CreateuserTaskComponent}
+    {path:'createuser-task',component:CreateuserTaskComponent},
+    {path:'login',component:LoginComponent}
+
 
   ]},
   {path:'**',component:ErrorComponent}
