@@ -1,7 +1,9 @@
 <!-- <p>login works!</p> -->
 <form class="form" [formGroup]="loginform">
-    <input placeholder="Enter your email" class="input" type="text" formControlName="email">
-    <input placeholder="Enter your password" class="input" type="password" formControlName="password">
+    <input type="text" placeholder="Enter your email" class="input" type="text" formControlName="email"><br><br>
+    <input [type]="hide? 'password':'text'" placeholder="Enter your password" class="input" type="password" formControlName="password"><br><br>
+
+    <button class="btn btn-primary" (click)="toogleVisibility()"><i class="bi bi-eye-fill"></i></button> 
 
     <button (click)="login()">Login</button>
 

@@ -45,10 +45,9 @@
             <th>fuel</th>
             <th>id</th>
             <th>image</th>
-            <th>manifacturer</th>
-            <th>model</th>
-            <th>type</th>
-            <th>tyres</th>
+            <th>model</th> 
+            <th>actions</th>
+            <th>edit</th>
             <th>delete</th>
         </tr>
     </thead>
@@ -60,11 +59,18 @@
             <td>{{vehicle.cost}}</td>
             <td>{{vehicle.fuel}}</td>
             <td>{{vehicle.id}}</td>
-            <td>{{vehicle.image}}</td>
-            <td>{{vehicle.manufacturer}}</td>
+            <td><img src="{{vehicle.image}}" alt="" width="100px"></td>
             <td>{{vehicle.model}}</td>
-            <td>{{vehicle.type}}</td>
-            <td>{{vehicle.tyres}}</td>
+            <td>
+                <button class="btn btn-info" routerLink="/dashboard/vehicle-details/{{vehicle.id}}">
+                    <i class="bi bi-eye-fill"></i>
+                </button>
+            </td>
+            <td>
+                <button class="btn btn-warning" routerLink="/dashboard/edit-vehicle/{{vehicle.id}}">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+            </td>
             <td><button class="btn btn-danger"
                 (click)="delete(vehicle.id)">Delete</button>
             </td>

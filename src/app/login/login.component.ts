@@ -9,11 +9,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  hide: any;
   constructor(private _loginService:LoginService,private _router:Router){}
   public loginform:FormGroup=new FormGroup({
   email:new FormControl(),
   password:new FormControl()
  })
+
+ toogleVisibility(){
+  this.hide=!this.hide;
+ }
 
  login(){
   console.log(this.loginform.value);
@@ -21,7 +26,7 @@ export class LoginComponent {
     (data:any)=>{
       alert("Login Successfull");
       sessionStorage.setItem('token',data.token);
-      this._router.navigateByUrl('/dashboard');
+      this._router.navigateByUrl('/dashboard/welcome');
     },(err:any)=>{
       alert("Inernal Error")
     }

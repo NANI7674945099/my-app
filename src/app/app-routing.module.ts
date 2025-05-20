@@ -22,6 +22,8 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateuserTaskComponent } from './createuser-task/createuser-task.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -35,16 +37,20 @@ const routes: Routes = [
     {path:'flipkart',component:FlipkartComponent},
     {path:'mail',component:MailComponent},
     {path:'weather',component:WeatherComponent},
+    {path:'edit-vehicle/:id',component:CreateVehicleComponent},
     {path:'create-vehicle',component:CreateVehicleComponent},
     {path:'student-card',component:StudentCardComponent},
     {path:'create-student',component:CreateStudentComponent},
+    {path:'edit-student/:id',component:CreateStudentComponent},
     {path:'calculator',component:CalculatorComponent},
     {path:'rectangle',component:RectangleComponent},
     {path:'circle',component:CircleComponent},
     {path:'bmi',component:BmiComponent},
     {path:'create-user',component:CreateUserComponent},
     {path:'createuser-task',component:CreateuserTaskComponent},
-    {path:'login',component:LoginComponent}
+    {path:'login',component:LoginComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'student-details/:id',component:StudentDetailsComponent}
 
 
   ]},

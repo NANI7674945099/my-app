@@ -1,4 +1,9 @@
 <!-- <p>create-student works!</p> -->
+<h1>{{id? 'Edit Studentcard':'Create Studentcard'}}</h1>
+
+<!-- <h1 *ngIf="!id">Create Studentcard</h1>
+<h1 *ngIf="id">Edit Studentcard</h1> -->
+
 <form [formGroup]="studentcardForm">
     <label for="">Name:</label>
     <input type="text" formControlName="name"> <br>

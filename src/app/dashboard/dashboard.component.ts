@@ -10,7 +10,7 @@ export class DashboardComponent {
   constructor(private _router:Router){}
 
   logout(){
-    if(confirm("are you sure to logout?")==true){
+    if(confirm("are you sure to logout?")==true ){
       sessionStorage.removeItem('token');
     this._router.navigateByUrl("/");
     }else{
