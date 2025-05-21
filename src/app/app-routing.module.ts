@@ -24,6 +24,12 @@ import { CreateuserTaskComponent } from './createuser-task/createuser-task.compo
 import { AuthenticationGuard } from './authentication.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { CommunicationmComponent } from './communicationm/communicationm.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -50,7 +56,13 @@ const routes: Routes = [
     {path:'createuser-task',component:CreateuserTaskComponent},
     {path:'login',component:LoginComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-    {path:'student-details/:id',component:StudentDetailsComponent}
+    {path:'student-details/:id',component:StudentDetailsComponent},
+    {path:'communication',component:CommunicationComponent},
+    {path:'communicationm',component:CommunicationmComponent},
+    {path:'sibling1',component:Sibling1Component},
+    {path:'sibling1',component:Sibling2Component},
+    {path:'rating',component:RatingComponent},
+    {path:'text-area',component:TextAreaComponent}
 
 
   ]},

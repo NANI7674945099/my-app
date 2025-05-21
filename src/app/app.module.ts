@@ -28,6 +28,13 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateuserTaskComponent } from './createuser-task/createuser-task.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { CommunicationComponent } from './communication/communication.component';
+import { ChildComponent } from './child/child.component';
+import { CommunicationmComponent } from './communicationm/communicationm.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +61,14 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     CreateUserComponent,
     CreateuserTaskComponent,
     VehicleDetailsComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    CommunicationComponent,
+    ChildComponent,
+    CommunicationmComponent,
+    Sibling1Component,
+    Sibling2Component,
+    RatingComponent,
+    TextAreaComponent
   ],
   imports: [
     BrowserModule,
