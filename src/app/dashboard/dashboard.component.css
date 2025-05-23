@@ -13,6 +13,7 @@
     flex-direction: column;
     /* display: flex; */
     /* line-height: 150%; */
+    overflow: auto;
 }
 .right{
     width: 80%;
